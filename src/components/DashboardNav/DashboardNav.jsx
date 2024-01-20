@@ -15,15 +15,15 @@ import support from '../../../public/assets/images/support.png'
 import logout from '../../../public/assets/images/logout.png';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+
 const DashboardNav = () => {
-    const router = useRouter();
-    const currentRoute = router.pathname;
+    
     return (
         <div className='container'>
             {/* logo */}
             <div className='img-logo'>
                 <Image
+                alt='logo'
                     height='auto'
                     width='auto'
                     src={logo}
@@ -39,6 +39,7 @@ const DashboardNav = () => {
                 <Link className='dashboard' href="/dashboard">
                 <Image
                     height='auto'
+                    alt='dashboard'
                     width='auto'
                     src={dashboardIcon}
                 />
@@ -47,6 +48,7 @@ const DashboardNav = () => {
                 <Link  className="link" href="/dashboard">
                 <Image
                     height='auto'
+                    alt='users'
                     width='auto'
                     src={users}
                 />
@@ -55,6 +57,7 @@ const DashboardNav = () => {
                 <Link className='link'  href="/dashboard">
                 <Image
                     height='auto'
+                    alt='chat'
                     width='auto'
                     src={chat}
                 />
@@ -63,6 +66,7 @@ const DashboardNav = () => {
                 <Link className="link"  href="/dashboard">
                 <Image
                     height='auto'
+                    alt='beSocial'
                     width='auto'
                     src={social}
                 />
@@ -71,6 +75,7 @@ const DashboardNav = () => {
                 <Link className="link"  href="/dashboard">
                 <Image
                     height='auto'
+                    alt='events'
                     width='auto'
                     src={events}
                 />
@@ -79,6 +84,7 @@ const DashboardNav = () => {
                 <Link  className="link" href="/dashboard">
                 <Image
                     height='auto'
+                    alt='package'
                     width='auto'
                     src={packages}
                 />
@@ -87,6 +93,7 @@ const DashboardNav = () => {
                 <Link className='link'  href="/dashboard">
                 <Image
                     height='auto'
+                    alt='payment'
                     width='auto'
                     src={payment}
                 />
@@ -94,6 +101,7 @@ const DashboardNav = () => {
                 </Link>
                 <Link className="link"  href="/dashboard">
                 <Image
+                alt='portal'
                     height='auto'
                     width='auto'
                     src={portal}
@@ -102,6 +110,7 @@ const DashboardNav = () => {
                 </Link>
                 <Link  className="link" href="/dashboard">
                 <Image
+                alt='contact'
                     height='auto'
                     width='auto'
                     src={contact}
@@ -110,6 +119,7 @@ const DashboardNav = () => {
                 </Link>
                 <Link  className="link" href="/dashboard">
                 <Image
+                alt='support'
                     height='auto'
                     width='auto'
                     src={support}
@@ -118,6 +128,7 @@ const DashboardNav = () => {
                 </Link>
                 <Link  className="logout" href="/dashboard">
                 <Image
+                alt='logout'
                     height='auto'
                     width='auto'
                     src={logout}

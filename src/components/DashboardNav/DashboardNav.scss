@@ -3,11 +3,17 @@ $gradient-start: #FD282B;
 $gradient-end: #CC176A;
 .container{
     width:20vw;
+    height: 1478px;
     color: $text-color;
+    padding-left: 2%;
+    padding-top: 2%;
+    position: relative;
+    
     
     .img-logo{
-        text-align: center;
-        margin-bottom:20px;
+        
+        margin-bottom:40px;
+        margin-left: 15%;
     }
     .main-menu{
         margin-bottom:20px;
