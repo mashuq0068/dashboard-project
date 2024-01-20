@@ -1,0 +1,28 @@
+$gradient-start: #FD282B;
+$gradient-end: #CC176A;
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:95vh;
+    width: 95vw;
+    .btn {
+        display: inline-block;
+        padding: 20px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        height: auto;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(to right, $gradient-start 0%, $gradient-end 100%);
+        transition: background 0.3s ease;
+      
+        &:hover {
+          background: linear-gradient(to right, $gradient-end 0%, $gradient-start 100%);
+        }
+      }
+}
