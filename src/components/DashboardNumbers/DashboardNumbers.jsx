@@ -33,7 +33,7 @@ const DashboardNumbers = () => {
 
   return (
     <>
-    <div className='main-container'>
+    <div className='main-container-num'>
     <Image className='img' height='auto' width='auto' src={totalUsers}  alt='user' />
     <Image className='img'  height='auto' width='auto'  src={totalMale}  alt='user' />
     <Image className='img'  height='auto' width='auto' src={totalFemale}  alt='user' />

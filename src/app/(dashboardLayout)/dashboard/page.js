@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import DashboardNumbers from "@/components/DashboardNumbers/DashboardNumbers";
 import UserAnalytics from "@/components/UserAnalytics/UserAnalytics";
 import TimeOnSite from "@/components/TimeOnSite/TimeOnSite";
+import UserGrowth from "@/components/UserGrowth/UserGrowth";
 
 
 
@@ -15,8 +16,8 @@ return(
    <DashboardTop></DashboardTop>
    <DashboardNumbers></DashboardNumbers>
    <UserAnalytics></UserAnalytics>
-   <UserAnalytics></UserAnalytics>
-   <UserAnalytics></UserAnalytics>
+   <UserGrowth></UserGrowth>
+   
    
    
    
