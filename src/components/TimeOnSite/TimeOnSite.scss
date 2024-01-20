@@ -1,0 +1,181 @@
+.container-timeOn {
+    position: relative;
+    width: 492px;
+    background: #fff;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    bottom: 10vh;
+    @media (max-width:800px) {
+        bottom: 0vh;
+    }
+   
+  
+    .title-text {
+      text-align: center;
+      background-color: crimson;
+      color: #fff;
+      font-weight: 400;
+      border-radius: 50px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+  
+    .skill-box {
+      width: 100%;
+      position: relative;
+      margin: 45px 0;
+  
+      .title {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: 
+        #636363;
+      }
+  
+      .skill-bar {
+        height: 18px;
+        width: 100%;
+        border-radius: 6px;
+        margin-top: 6px;
+        background: rgba(0, 0, 0, 0.1);
+  
+        .skill-per-one {
+        //   position: relative;
+          display: block;
+          height: 100%;
+          width: 95%;
+          border-radius: 6px;
+          background: #076A49;
+          animation: progress 0.4s ease-in-out forwards;
+          opacity: 0;
+
+  
+          &.one {
+            width: 70%;
+            animation-delay: 0.1s;
+          }
+          
+          
+          
+          
+          .tooltip {
+           color: #076A49;
+           position: absolute;
+          right: 0px;
+           top: 0px;
+  
+            &::before {
+              content: '';
+              position: absolute;
+              left: 50%;
+              bottom: -2px;
+              height: 10px;
+              width: 10px;
+              z-index: -1;
+              background-color: #076A49;
+              transform: translateX(-50%) rotate(45deg);
+            }
+          }
+        }
+        .skill-per-two {
+        //   position: relative;
+          display: block;
+          height: 100%;
+          width: 95%;
+          border-radius: 6px;
+          background: #CB176B;
+          animation: progress 0.4s ease-in-out forwards;
+          opacity: 0;
+
+  
+          &.two {
+            width: 50%;
+            animation-delay: 0.1s;
+          }
+          
+          
+          
+          
+          .tooltip {
+           color: #CB176B;
+           position: absolute;
+          right: 0px;
+           top: 0px;
+  
+            &::before {
+              content: '';
+              position: absolute;
+              left: 50%;
+              bottom: -2px;
+              height: 10px;
+              width: 10px;
+              z-index: -1;
+              background-color: #CB176B;
+              transform: translateX(-50%) rotate(45deg);
+            }
+          }
+        }
+        .skill-per-three {
+        //   position: relative;
+          display: block;
+          height: 100%;
+          width: 95%;
+          border-radius: 6px;
+          background: #089C65;
+          animation: progress 0.4s ease-in-out forwards;
+          opacity: 0;
+
+  
+          &.three {
+            width: 15%;
+            animation-delay: 0.1s;
+          }
+          
+          
+          
+          
+          .tooltip {
+           color: #089C65;
+           position: absolute;
+          right: 0px;
+           top: 0px;
+  
+            &::before {
+              content: '';
+              position: absolute;
+              left: 50%;
+              bottom: -2px;
+              height: 10px;
+              width: 10px;
+              z-index: -1;
+              background-color: #089C65;
+              transform: translateX(-50%) rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  
+    @keyframes progress {
+      0% {
+        width: 0;
+        opacity: 1;
+      }
+  
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  
+//   &.two {
+//     width: 50%;
+//     animation-delay: 0.1s;
+//   }
+
+//   &.three {
+//     width: 15%;
+//     animation-delay: 0.2s;
+//   }

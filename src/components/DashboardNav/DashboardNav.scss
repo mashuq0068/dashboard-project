@@ -2,12 +2,13 @@ $text-color : #636363;
 $gradient-start: #FD282B;
 $gradient-end: #CC176A;
 .container{
-    width:15vw;
+    width: 15vw;
     height: 1478px;
     color: $text-color;
     padding-left: 2%;
     padding-top: 2%;
     position: relative;
+    
     @media (max-width : 1800px) {
       width: 20vw;
      

@@ -1,6 +1,17 @@
 .text{
     font-weight:600;
     font-size: 24px;
-    margin-top: 3vh;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    @media (max-width:800px) {
+        margin-left: 10vw;
+       }
    
+}
+.chart-container{
+    display: flex;
+    margin-top: 5vh;
+    @media (max-width:800px) {
+     flex-direction: column;
+    }
 }

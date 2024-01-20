@@ -1,6 +1,7 @@
 "use client"
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts';
 import './userAnalytics.scss'
+import TimeOnSite from '../TimeOnSite/TimeOnSite';
 
 const data = [
     {
@@ -17,7 +18,7 @@ const data = [
     },
     {
       name: 'Mar',
-      newVisitor: 2000,
+      newVisitor: 5000,
       totalUser: 9800,
       amt: 2290,
     },
@@ -28,37 +29,37 @@ const data = [
       amt: 2000,
     },
     {
-      name: 'May', // Changed to 'Page E1'
+      name: 'May', 
       newVisitor: 1890,
       totalUser: 4800,
       amt: 2181,
     },
     {
-      name: 'Jun', // Changed to 'Page F1'
+      name: 'Jun', 
       newVisitor: 2390,
       totalUser: 3800,
       amt: 2500,
     },
     {
-      name: 'Jul', // Changed to 'Page G1'
+      name: 'Jul', 
       newVisitor: 3490,
       totalUser: 4300,
       amt: 2100,
     },
     {
-      name: 'Aug', // Unique key
+      name: 'Aug', 
       newVisitor: 1890,
       totalUser: 4800,
       amt: 2181,
     },
     {
-      name: 'Sep', // Unique key
+      name: 'Sep', 
       newVisitor: 2390,
       totalUser: 3800,
       amt: 2500,
     },
     {
-      name: 'Oct', // Unique key
+      name: 'Oct', 
       newVisitor: 3490,
       totalUser: 4300,
       amt: 2100,
@@ -66,13 +67,14 @@ const data = [
   ];
 
 const UserAnalytics = () => {
-    if(typeof window !== 'undefined'){
+ 
     return (
-        <>
-         <div className='text'>
+        
+         <>
+          <div className='text'>
          User Analytics
          </div>
-          <div style={{marginTop:'5vh' ,display:'flex'}}>
+    <div className='chart-container'>
         <ResponsiveContainer width='100%' height={300}>
         <BarChart
          width={400}
@@ -90,20 +92,24 @@ const UserAnalytics = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="totalUser" barSize={13} fill="#076A49" activeBar={<Rectangle fill="pink" stroke="#076A49" />} />
-          <Bar dataKey="newVisitor" barSize={13} fill="#CB176B" activeBar={<Rectangle fill="gold" stroke="#CB176B" />} />
+          <Bar dataKey="totalUser" barSize={15} fill="#076A49" activeBar={<Rectangle fill="pink" stroke="#076A49" />} />
+          <Bar dataKey="newVisitor" barSize={15} fill="#CB176B" activeBar={<Rectangle fill="gold" stroke="#CB176B" />} />
         </BarChart>
         </ResponsiveContainer>
+        <div>
+            <TimeOnSite></TimeOnSite>
+        </div>
 
       
         
         </div>
+        
 
-        </>
+      </>  
         
         
     );
-}};
+};
 
 export default UserAnalytics;
 
