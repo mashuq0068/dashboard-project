@@ -3,6 +3,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { curveCardinal } from 'd3-shape';
 import './UseGrowth.scss'
 import MostActive from '../MostActive/MostActive';
+import Users from '../Users/Users';
 // import { defs, linearGradient } from 'react-native-svg';
 const gradientColor = 'linear-gradient(171.05deg, rgba(7, 106, 73, 0.36) 24.17%, rgba(203, 23, 107, 0.06) 115.07%)';
 const data = [
@@ -58,7 +59,7 @@ const UserGrowth = () => {
          <div className='text-growth'>
          User Growth
          </div>
-         <div style={{display:'flex'}}>
+         <div className='userGrowth-container'>
         <ResponsiveContainer width='100%' height={300}>
         <AreaChart
           width={500}
@@ -91,6 +92,9 @@ const UserGrowth = () => {
        </ResponsiveContainer>
        <div>
         <MostActive></MostActive>
+       </div>
+       <div>
+        <Users></Users>
        </div>
        </div>
        </>

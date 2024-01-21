@@ -1,17 +1,49 @@
-.real-container{
-    
+.real-container {
     padding: 20px;
-    .active-container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #636363;
-    font-size: 13px;
-    padding: 10px 0px;
-   
-    .name{
-        color: 
-        #12151B;
-        font-weight: 500;
+    width: 450px;
+    position: relative;
+    bottom: 7vh;
+    @media (max-width : 500px) {
+
+        width: auto;
+        position: static;
+        
+        
     }
-}}
+
+    .text-part {
+        display: flex;
+        justify-content: space-between;
+       
+        width: 100%;
+        @media (max-width:800px) {
+            margin-left: 2vw;
+           }
+
+        .text-most {
+            font-weight: 600;
+            font-size: 24px;
+            margin-top: 0vh;
+            margin-bottom: 5vh;
+           
+        }
+
+        .text-red {
+            color: red;
+        }
+    }
+
+    .active-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #636363;
+        font-size: 13px;
+        padding: 10px 0px;
+
+        .name {
+            color: #12151b;
+            font-weight: 500;
+        }
+    }
+}

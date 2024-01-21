@@ -9,4 +9,15 @@
     margin-top: 0vh;
    margin-bottom: 5vh;
    margin-left: 3vw;
+   @media (max-width:800px) {
+    margin-left: 10vw;
+   }
+  }
+  .userGrowth-container{
+    display: flex;
+    
+    @media (max-width : 800px) {
+      flex-direction: column;
+      gap: 50px;
+    }
   }

@@ -13,5 +13,6 @@
     margin-top: 5vh;
     @media (max-width:800px) {
      flex-direction: column;
+     gap: 50px;
     }
 }

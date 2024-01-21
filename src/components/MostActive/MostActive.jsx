@@ -25,6 +25,10 @@ const MostActive = () => {
         ]
     return (
         <div className='real-container'>
+            <div className='text-part'>
+                <h3 className='text-most'>Most active users</h3>
+                <p className='text-red'>see more</p>
+            </div>
 {users?.map((user , i) => 
 <div className='active-container' key={i}>
     <Image src={user?.image} height='auto' width='auto' alt='user-profile'/>
