@@ -3,7 +3,11 @@
     bottom: 10vh;
    margin-left: 5vw;
    @media (max-width:700px) {
-    margin-left: 35vw;
+    // margin-left: 35vw;
+    width: 80vw;
+   margin-left: auto;
+    
+    margin-right: auto;
     
    }
    .text-users{
@@ -15,7 +19,7 @@
     @media (max-width:700px) {
       
         
-        left: -22vw;
+        // left: -22vw;
        }
    }
    .main-details{
@@ -70,9 +74,17 @@
     top: 45%;
     left: 35%;
     @media (max-width:700px) {
-        left: 23%;
+        left: 30%;
         
        }
-  }
+    @media (max-width:390px) {
+        left: 35%;
+        
+       }
 
-}
+    @media (max-width:350px) {
+        left: 40%;
+        
+       }
+  }}
+

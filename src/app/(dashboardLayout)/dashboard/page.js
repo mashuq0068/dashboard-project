@@ -19,14 +19,14 @@ return(
    <DashboardNumbers></DashboardNumbers>
    <UserAnalytics></UserAnalytics>
    <UserGrowth></UserGrowth>
-   <Reviews></Reviews>
+   <Reviews></Reviews> 
    
    
    
    
    
    
-   </div>
+</div>
 )
 
 }

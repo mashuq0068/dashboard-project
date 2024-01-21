@@ -15,7 +15,17 @@ $gradient-end: #CC176A;
         
     }
     @media (max-width : 800px) {
-        display: none;
+       position: absolute;
+       top:10vh;
+       width: auto;
+       height: 180vh;
+       background-color: rgb(248, 245, 245);
+       z-index: 2;
+       padding-right: 10px;
+       box-shadow: 0 14px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+       display: none;
+      
+    //    border:1px solid #CC176A;
         
     }
     

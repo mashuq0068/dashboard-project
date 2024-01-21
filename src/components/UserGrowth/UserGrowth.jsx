@@ -60,17 +60,13 @@ const UserGrowth = () => {
          User Growth
          </div>
          <div className='userGrowth-container'>
-        <ResponsiveContainer width='100%' height={300}>
+      
+      <ResponsiveContainer width='100%' height={300}>
         <AreaChart
-          width={500}
-          height={400}
+           width={400}
+           height={300}
           data={data}
-          margin={{
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0,
-          }}
+          
         >
             <defs>
           <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -90,13 +86,16 @@ const UserGrowth = () => {
           <Area type={cardinal} dataKey="uv" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.3} />
         </AreaChart>
        </ResponsiveContainer>
+      
+    
        <div>
         <MostActive></MostActive>
        </div>
        <div>
         <Users></Users>
        </div>
-       </div>
+       
+      </div>
        </>
     );
 };
