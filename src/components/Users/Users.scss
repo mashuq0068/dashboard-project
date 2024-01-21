@@ -11,7 +11,12 @@
     top:5vh;
     font-weight: 600;
     font-size: 24px;
-    left: -22vw;
+    left: 0px;
+    @media (max-width:700px) {
+      
+        
+        left: -22vw;
+       }
    }
    .main-details{
     position: absolute;

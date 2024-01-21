@@ -6,6 +6,7 @@ import DashboardNumbers from "@/components/DashboardNumbers/DashboardNumbers";
 import UserAnalytics from "@/components/UserAnalytics/UserAnalytics";
 
 import UserGrowth from "@/components/UserGrowth/UserGrowth";
+import Reviews from "@/components/Reviews/Reviews";
 
 
 
@@ -18,6 +19,7 @@ return(
    <DashboardNumbers></DashboardNumbers>
    <UserAnalytics></UserAnalytics>
    <UserGrowth></UserGrowth>
+   <Reviews></Reviews>
    
    
    
