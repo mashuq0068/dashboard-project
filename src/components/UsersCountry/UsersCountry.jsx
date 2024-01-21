@@ -12,6 +12,13 @@ const data = [
 ];
 const COLORS = ['#17C8B7', '#CB176B', '#076A49', '#FF985F' , '#9908F5'];
 const UsersCountry = () => {
+    const countryPercentage = {
+        bangladesh : 70,
+        usa : 10,
+        india : 10,
+        canada : 5,
+        pakistan : 5
+    }
 
     return (
         <>
@@ -59,35 +66,35 @@ const UsersCountry = () => {
                    <span className='bangladesh-circle'></span>
                    <p className='bangladesh-p'>Bangladesh</p>
                 </div>
-                <p>70%</p>
+                <p>{countryPercentage.bangladesh}%</p>
             </div>
             <div className='usa'>
                <div className='usa-part'>
                    <span className='usa-circle'></span>
                    <p className='usa-p'>USA</p>
                 </div>
-                <p>30%</p>
+                <p>{countryPercentage.usa}%</p>
             </div>
             <div className='india'>
                <div className='india-part'>
                    <span className='india-circle'></span>
                    <p className='india-p'>India</p>
                 </div>
-                <p>30%</p>
+                <p>{countryPercentage.india}%</p>
             </div>
             <div className='canada'>
                <div className='canada-part'>
                    <span className='canada-circle'></span>
                    <p className='canada-p'>Canada</p>
                 </div>
-                <p>30%</p>
+                <p>{countryPercentage.canada}%</p>
             </div>
             <div className='pakistan'>
                <div className='pakistan-part'>
                    <span className='pakistan-circle'></span>
                    <p className='pakistan-p'>Pakistan</p>
                 </div>
-                <p>30%</p>
+                <p>{countryPercentage.pakistan}%</p>
             </div>
          </div>
       </div>
