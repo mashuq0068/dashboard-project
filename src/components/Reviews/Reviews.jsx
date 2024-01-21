@@ -15,9 +15,9 @@ const Reviews = () => {
 
     }
    return (
-    <div style={{display : 'flex'}}>
+    <div className='main-reviews'>
        <div className="container-reviews">
-          <div  style={{color:'black' , fontWeight:'600', fontSize:'24px' }}>
+          <div className='text-review'>
           Reviews
             </div>
        

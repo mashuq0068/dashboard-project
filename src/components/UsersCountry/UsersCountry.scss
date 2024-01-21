@@ -1,0 +1,129 @@
+.country-container {
+    display: flex;
+    width: 30vw;
+    // position: relative;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    align-items: center;
+    margin-left: 5vw;
+    .country-details{
+        
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        
+        @media (max-width:700px) {
+            flex-direction: column;
+            position: absolute;
+            left: 15%;
+           
+           }
+        .bangladesh{
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            justify-content: space-between;
+          .bangladesh-part{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .bangladesh-circle{
+                height: 16px;
+                width: 16px;
+                border-radius: 52px;
+                background-color: #076A49;
+                display: inline-block;
+               }
+          }
+        }
+        .usa{
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            justify-content: space-between;
+            .usa-part{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .usa-circle{
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 52px;
+                    background-color: #CB176B;
+                    display: inline-block;
+                   }
+            }
+            
+        }
+        .india{
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            justify-content: space-between;
+            .india-part{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .india-circle{
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 52px;
+                    background-color: #FF985F;
+                    display: inline-block;
+                   }
+            }
+            
+        }
+        .canada{
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            justify-content: space-between;
+            .canada-part{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .canada-circle{
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 52px;
+                    background-color: #9908F5;
+                    display: inline-block;
+                   }
+            }
+            
+        }
+        .pakistan{
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            justify-content: space-between;
+            .pakistan-part{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .pakistan-circle{
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 52px;
+                    background-color: #17C8B7;
+                    display: inline-block;
+                   }
+            }
+            
+        }
+       }
+
+}
+.text-country {
+
+position: relative;
+top: 4vh;
+font-weight: 600;
+font-size: 24px;
+left: 5vw;
+@media (max-width : 700px) {
+   left: -18vw;
+   
+}
+}

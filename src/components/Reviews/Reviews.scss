@@ -1,4 +1,11 @@
-.container-reviews {
+.main-reviews{
+    display: flex;
+    align-items: center;
+    @media (max-width : 700px) {
+        flex-direction: column;
+    }
+    
+    .container-reviews {
     position: relative;
     width:35vw;
     background: #fff;
@@ -10,6 +17,17 @@
     @media (max-width:800px) {
         bottom: 0vh;
         width: 100%;
+    }
+    .text-review{
+        
+       color: black;
+       font-weight:600;
+       font-size: 24px;
+       @media (max-width : 700px) {
+        margin-left: 11vw;
+        
+     } 
+
     }
    
   
@@ -175,7 +193,7 @@
       }
     }
   }
-  
+}
 //   &.two {
 //     width: 50%;
 //     animation-delay: 0.1s;
