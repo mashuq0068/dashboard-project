@@ -3,7 +3,7 @@
     bottom: 10vh;
    margin-left: 5vw;
    @media (max-width:700px) {
-    margin-left: 25vw;
+    margin-left: 35vw;
     
    }
    .text-users{
@@ -11,6 +11,7 @@
     top:5vh;
     font-weight: 600;
     font-size: 24px;
+    left: -22vw;
    }
    .main-details{
     position: absolute;
@@ -18,6 +19,12 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @media (max-width:700px) {
+        flex-direction: column;
+        position: absolute;
+        left: 15%;
+       
+       }
     .male{
         display: flex;
         gap: 30px;

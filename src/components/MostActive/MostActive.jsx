@@ -31,7 +31,10 @@ const MostActive = () => {
             </div>
 {users?.map((user , i) => 
 <div className='active-container' key={i}>
+<div style={{position:'relative'}}>
+<div className="active-indicator"></div>
     <Image src={user?.image} height='auto' width='auto' alt='user-profile'/>
+</div>
     <div>
         <p className='name'>{user?.name}</p>
         <p>{user?.email}</p>
